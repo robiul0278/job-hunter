@@ -1,0 +1,67 @@
+[
+ {
+        "id": 1,
+        "post": "Technical Database Engineer",
+        "company":"Google LLC",
+        "location":"Dhaka, Bangladesh",
+        "salary":"Salary : 100K - 150K"
+    },
+    {
+        "id": 2,
+        "post": "Frontend Developer",
+        "company": "Adobe Inc.",
+        "location": "San Jose, California, USA",
+        "salary": "Salary: 100K - 130K",
+        "image": "https://www.example.com/images/adobe.jpg"
+    },
+    {
+        "id": 3,
+        "post": "Cybersecurity Specialist",
+        "company": "IBM Corporation",
+        "location": "Armonk, New York, USA",
+        "salary": "Salary: 130K - 160K",
+        "image": "https://www.example.com/images/ibm.jpg"
+    },
+    {
+        "id": 4,
+        "post": "Data Analyst",
+        "company": "Uber Technologies, Inc.",
+        "location": "San Francisco, California, USA",
+        "salary": "Salary: 90K - 110K",
+        "image": "https://www.example.com/images/uber.jpg"
+    },
+    {
+        "id": 5,
+        "post": "Web Developer",
+        "company": "Facebook, Inc.",
+        "location": "Menlo Park, California, USA",
+        "salary": "Salary: 110K - 140K",
+        "image": "https://www.example.com/images/facebook.jpg"
+    },
+    {
+        "id": 6,
+        "post": "Network Administrator",
+        "company": "Cisco Systems, Inc.",
+        "location": "San Jose, California, USA",
+        "salary": "Salary: 90K - 120K",
+        "image": "https://www.example.com/images/cisco.jpg"
+    },
+    {
+        "id": 7,
+        "post": "Machine Learning Engineer",
+        "company": "Amazon Web Services",
+        "location": "Seattle, Washington, USA",
+        "salary": "Salary: 130K - 170K",
+        "image": "https://www.example.com/images/aws.jpg"
+    },
+    {
+        "id": 8,
+        "post": "Software Developer",
+        "company": "Microsoft Corporation",
+        "location": "Redmond, Washington, USA",
+        "salary": "Salary: 120K - 150K",
+        "image": "https://www.example.com/images/microsoft.jpg"
+    }
+    
+    
+]

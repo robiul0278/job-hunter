@@ -25,3 +25,6 @@
         rgba(152, 115, 255, 0.05) 100%
       );
 }
+.area-img{
+  background-image: url(../public/Image/man.png);
+}

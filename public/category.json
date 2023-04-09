@@ -1,22 +1,26 @@
 [
     {
      "id": 1,
-     "category": "Account & Finance",
-     "job":"300 Jobs Available"
+     "title": "Account & Finance",
+     "job":"300 Jobs Available",
+     "img": "https://cdn-icons-png.flaticon.com/512/969/969708.png?w=826&t=st=1681074187~exp=1681074787~hmac=d7b666a7df4244c658a1fff9f1fe88999c4f386a8c0bfac7b6ad6309bbe6db44"
     },
     {
-     "id": 1,
-     "category": "Creative Design",
-     "job":"100+ Jobs Available"
+     "id": 2,
+     "title": "Creative Design",
+     "job":"100+ Jobs Available",
+     "img": "https://cdn-icons-png.flaticon.com/512/855/855441.png?w=826&t=st=1681074142~exp=1681074742~hmac=6fcfd94c938bb531b9c23e0c7e87b76153b69032281e24d8101039e4392ca838"
     },
     {
-     "id": 1,
-     "category": "Marketing & Sales",
-     "job":"150 Jobs Available"
+     "id": 3,
+     "title": "Marketing & Sales",
+     "job":"150 Jobs Available",
+     "img":" https://cdn-icons-png.flaticon.com/512/618/618035.png?w=826&t=st=1681074055~exp=1681074655~hmac=25f8976fb84996c7e29dcb9da603b9fe99fd09335e2104da8ded35146054e3a5"
     },
     {
-     "id": 1,
-     "category": "Engineering Job",
-     "job":"224 Jobs Available"
+     "id": 4,
+     "title": "Engineering Job",
+     "job":"224 Jobs Available",
+     "img": "https://cdn-icons-png.flaticon.com/512/1250/1250200.png?w=826&t=st=1681073935~exp=1681074535~hmac=af1867a9268ee07ed34b15e0b34ca26da2590f555a9f30f280d23de402939571"
     }
 ]

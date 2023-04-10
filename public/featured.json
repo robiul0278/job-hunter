@@ -4,7 +4,8 @@
         "post": "Technical Database Engineer",
         "company":"Google LLC",
         "location":"Dhaka, Bangladesh",
-        "salary":"Salary : 100K - 150K"
+        "salary":"Salary : 100K - 150K",
+        "image": "https://i.ibb.co/CzjKQf2/google-1-1-1.png"
     },
     {
         "id": 2,
@@ -12,7 +13,7 @@
         "company": "Adobe Inc.",
         "location": "San Jose, California, USA",
         "salary": "Salary: 100K - 130K",
-        "image": "https://www.example.com/images/adobe.jpg"
+        "image": "https://logos-world.net/wp-content/uploads/2020/07/Adobe-Logo.png"
     },
     {
         "id": 3,
@@ -20,7 +21,7 @@
         "company": "IBM Corporation",
         "location": "Armonk, New York, USA",
         "salary": "Salary: 130K - 160K",
-        "image": "https://www.example.com/images/ibm.jpg"
+        "image": " https://1000logos.net/wp-content/uploads/2021/05/IBM-logo.png"
     },
     {
         "id": 4,
@@ -28,7 +29,7 @@
         "company": "Uber Technologies, Inc.",
         "location": "San Francisco, California, USA",
         "salary": "Salary: 90K - 110K",
-        "image": "https://www.example.com/images/uber.jpg"
+        "image": "https://logos-world.net/wp-content/uploads/2020/05/Uber-Logo-2016-2018.png"
     },
     {
         "id": 5,
@@ -36,7 +37,7 @@
         "company": "Facebook, Inc.",
         "location": "Menlo Park, California, USA",
         "salary": "Salary: 110K - 140K",
-        "image": "https://www.example.com/images/facebook.jpg"
+        "image": "https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo-2019-present.jpg"
     },
     {
         "id": 6,
@@ -44,7 +45,7 @@
         "company": "Cisco Systems, Inc.",
         "location": "San Jose, California, USA",
         "salary": "Salary: 90K - 120K",
-        "image": "https://www.example.com/images/cisco.jpg"
+        "image": "https://logos-world.net/wp-content/uploads/2021/08/Cisco-Symbol.png"
     },
     {
         "id": 7,
@@ -52,7 +53,7 @@
         "company": "Amazon Web Services",
         "location": "Seattle, Washington, USA",
         "salary": "Salary: 130K - 170K",
-        "image": "https://www.example.com/images/aws.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/1200px-AmazonWebservices_Logo.svg.png"
     },
     {
         "id": 8,
@@ -60,7 +61,7 @@
         "company": "Microsoft Corporation",
         "location": "Redmond, Washington, USA",
         "salary": "Salary: 120K - 150K",
-        "image": "https://www.example.com/images/microsoft.jpg"
+        "image": "https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80659_960_720.png"
     }
     
     

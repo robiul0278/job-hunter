@@ -4,7 +4,7 @@ import { LevelContext } from '../Home/Home';
 
 const Category = () => {
     const categories = useContext(LevelContext)
-    // console.log(category)
+    console.log(categories)
     return (
         <div className='container mx-auto mt-32'>
             <div className='flex justify-center items-center flex-col'>

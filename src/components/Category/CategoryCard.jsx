@@ -2,7 +2,6 @@ import "./Cart.css"
 
 const CategoryCard = ({ category }) => {
   const { title, job, img } = category;
-  console.log(title)
   return (
     <div>
       <div className="card w-80 category-bg">

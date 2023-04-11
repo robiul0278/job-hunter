@@ -1,9 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FeaturedContext } from '../Home/Home';
 import FeaturedCard from './FeaturedCard';
+import "./feature.css"
 
 const Featured = () => {
-    const features = useContext(FeaturedContext)
+    const data = useContext(FeaturedContext);
+    const [showAll, setShowAll] = useState(false);
+
+    const features = showAll? data : data.slice(0 , 4);
+     const handleClick = () =>{
+        setShowAll(true)
+     }
+
     return (
         <div className='container mx-auto mt-32'>
             <div className='flex justify-center items-center flex-col'>
@@ -19,7 +27,7 @@ const Featured = () => {
                 }
             </div>
             <div className='text-center my-5'>
-                <button className='btn bg-blue-600 text-white font-bold'>See All Jobs</button>
+                <span onClick={handleClick}  className={`btn btn-type text-white ${features.length > 4 ? "hidden": "" }`}>See All Jobs</span>
             </div>
         </div>
     );

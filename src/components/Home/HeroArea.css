@@ -26,5 +26,5 @@
       );
 }
 .area-img{
-  background-image: url(../public/Image/man.png);
+  background-image: url(/public/Image/man.png);
 }

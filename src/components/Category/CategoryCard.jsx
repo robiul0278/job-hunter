@@ -4,7 +4,7 @@ const CategoryCard = ({ category }) => {
   const { title, job, img } = category;
   return (
     <div>
-      <div className="card w-80 category-bg">
+      <div className="card w-full category-bg">
         <div className="card-body">
         <img className="cart-img" src={img} alt="" />
           <h2 className="card-title">{title}</h2>

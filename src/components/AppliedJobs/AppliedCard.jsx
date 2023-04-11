@@ -35,7 +35,7 @@ const AppliedCard = ({ jobs }) => {
             </div>
           </div>
           <div className="card-actions absolute  right-0">
-            <Link to={`job/${id}`}  className="btn btn-type">View Details</Link>
+            <Link to="/"  className="btn btn-type">View Details</Link>
           </div>
         </div>
       </div>

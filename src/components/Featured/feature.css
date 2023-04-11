@@ -13,6 +13,7 @@
   order: 0;
   flex-grow: 0;
   border:1px solid #7e90fe;
+  padding: 4px;
 }
 .btn-type{
     background:linear-gradient(90deg, #7e90fe 0%, #9873ff 100%) ;

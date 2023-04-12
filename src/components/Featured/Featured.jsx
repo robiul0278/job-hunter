@@ -13,12 +13,12 @@ const Featured = () => {
      }
 
     return (
-        <div className='container mx-auto mt-32'>
+        <div className='container mx-auto mt-16 md:mt-32'>
             <div className='flex justify-center items-center flex-col'>
-                <h1 className='font-bold'>Featured Jobs</h1>
-                <p className=' text-slate-500 mt-5' >Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <h1 className='font-bold text-4xl'>Featured Jobs</h1>
+                <p className=' text-slate-500 p-5 md:mt-5' >Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
-            <div className='grid grid-cols-2 md:px-36 gap-12 mt-8'>
+            <div className='grid md:grid-cols-2 md:px-36 p-5 gap-5 md:gap-12 mt-8'>
                 {
                   features.map(feature => <FeaturedCard
                   key={feature.id}

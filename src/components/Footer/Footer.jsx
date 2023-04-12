@@ -4,7 +4,7 @@ import "./footer.css"
 const Footer = () => {
   return (
     <div className=" bg-black">
-      <footer className="footer grid grid-cols-10 container mx-auto p-10 bg-black text-white">
+      <footer className="footer grid md:grid-cols-10 container mx-auto p-10 bg-black text-white">
         <div className="col-span-3">
         <span className="normal-case font-bold text-3xl">Job <span className=" text-blue-500">Hunter</span></span>
         <a className=" w-72">There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</a>
@@ -53,21 +53,21 @@ const Footer = () => {
           <a className="link link-hover">Marketing</a>
           <a className="link link-hover">Advertisement</a>
         </div>
-        <div className="col-span-2">
+        <div className="md:col-span-2">
           <span className="foot-title">Services</span>
           <a className="link link-hover">Branding</a>
           <a className="link link-hover">Design</a>
           <a className="link link-hover">Marketing</a>
           <a className="link link-hover">Advertisement</a>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-4 md:col-span-2">
           <span className="foot-title">Company</span>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Jobs</a>
           <a className="link link-hover">Press kit</a>
         </div>
-        <div className=" col-span-2">
+        <div className=" md:col-span-2">
           <span className="foot-title">Legal</span>
           <a className="link link-hover">Terms of use</a>
           <a className="link link-hover">Privacy policy</a>

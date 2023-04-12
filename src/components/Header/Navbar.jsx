@@ -18,7 +18,7 @@ const Navbar = () => {
       <li><Link to="/blog">Blog</Link></li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case font-bold text-4xl">Job <span className=" text-blue-500">Hunter</span></a>
+    <a className="btn btn-ghost normal-case font-bold text-2xl md:text-4xl">Job <span className=" text-blue-500">Hunter</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

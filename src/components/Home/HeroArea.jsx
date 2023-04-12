@@ -5,7 +5,7 @@ const HeroArea = () => {
       <div className="hero hero-area">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
-            src="../public/Image/man.png"
+            src="Image/man.png"
             className="md:max-w-xl max-w-sm -mb-4"
           />
           <div>

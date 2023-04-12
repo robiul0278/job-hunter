@@ -1,60 +1,93 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import AppliedCard from "./AppliedCard";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { getShoppingCart } from "../utilities/fakedb";
 
 const AppliedJobs = () => {
-  const applied = useLoaderData();
-  const [items, setItems] = useState(applied);
+  // founded job from localStorage
+  const jobData = useLoaderData();
+  console.log(jobData);
+  const [jobs, setJobs] = useState([]);
+  console.log(jobs.length);
 
+  useEffect(() => {
+    const foundedJobs = [];
+    const storedCart = getShoppingCart();
+    console.log(storedCart);
+    // find and set jobs in foundedJobs array
+    for (const id in storedCart) {
+      const filterJobs = jobData.find((job) => job.id == id);
+      if (filterJobs) {
+        foundedJobs.push(filterJobs);
+      }
+    }
 
+    setJobs(foundedJobs);
+  }, []);
 
-  const filterItem = (work) => {
-    const updateItems = applied.filter((works) => {
-      return works.workType === work
-    });
-    setItems(updateItems);
-  }
+  const handleFilter = (event) => {
+    filteredJobs = [];
+    for (const job of jobData) {
+      if (event.target.value == job.workType) {
+        filteredJobs.push(job);
+      } else if (event.target.value == "show-all") {
+        filteredJobs.push(job);
+      }
+    }
 
+    // set data useState
+    setJobs(filteredJobs);
+  };
   return (
     <div>
       <div className="detailsArea grid grid-cols-12">
         <div className=" col-span-3 bottom-0 left-0">
-          <img className="w-80" src="/public/Image/Vector.png" alt="" />
+          <img className="w-80" src="Image/Vector.png" alt="" />
         </div>
         <div className=" col-span-6 flex justify-center items-center">
-          <h1 className="text-center font-bold">Applied Jobs</h1>
+          <section>
+          <h1 className="font-bold">Applied Jobs</h1>
+            {/* {jobs.length === 0 ? (
+              <h1>No Applied Job Found</h1>
+            ) : (
+              <div>Applied Jobs</div>
+            )} */}
+          </section>
+
+          <h1 className="text-center font-bold"></h1>
         </div>
         <div className=" col-span-3 absolute top-0 right-0">
-          <img src="/public/Image/Vector-1.png" alt="" />
+          <img src="Image/Vector-1.png" alt="" />
         </div>
       </div>
-      <div className=" container mx-auto grid md:px-36 md:mt-32 md:mb-32">
-        <div className="flex justify-end mb-3">
-          <div className="dropdown dropdown-end mr-">
-            <label tabIndex={0} className="bg-stone-100 px-5 py-3 rounded-sm">
-            Filter By <FontAwesomeIcon icon={faChevronDown} />
-            </label>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu p-1 shadow bg-base-100 w-52"
-            >
-              <li>
-                <p onClick={() => filterItem('remote')}>Remote</p>
-              </li>
-              <li>
-                <p>Onsite</p>
-              </li>
-            </ul>
+      <section className=" container mx-auto grid md:px-36 md:mt-32 md:mb-32">
+        {jobs.length === 0 ? (
+          <div className="mx-auto"> <img src="https://media.istockphoto.com/id/1290154699/pt/vetorial/comic-speech-bubble-with-text-oops-message-in-pop-art-style.jpg?s=612x612&w=0&k=20&c=8-yDS3NdmnwmpVvTAZz37vfsVaD1i8m8LfDgmOk6PJY=" alt="" /></div>
+        ) : (
+          <div>
+            <div className="flex justify-end m-2 ">
+              <select
+                onChange={handleFilter}
+                defaultValue="default"
+                className="select w-full max-w-xs"
+              >
+                <option value="default" disabled>
+                  Pick your favorite Simpson
+                </option>
+                <option value="show-all">Show All</option>
+                <option value="Remote">Remote</option>
+                <option value="Onsite">Onsite</option>
+              </select>
+            </div>
+
+            <div className="grid gap-5 mt-4">
+              {jobs.map((job) => (
+                <AppliedCard key={job.id} job={job}></AppliedCard>
+              ))}
+            </div>
           </div>
-        </div>
-      <div className="grid gap-5 mt-4">
-      {applied.map((jobs) => (
-          <AppliedCard key={jobs.id} jobs={jobs}></AppliedCard>
-        ))}
-      </div>
-      </div>
+        )}
+      </section>
     </div>
   );
 };

@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faSackDollar } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const AppliedCard = ({ jobs }) => {
-  const { image, post, company, workType, time, location, salary,id } = jobs;
+const AppliedCard = ({ job}) => {
+  const { image, post, company, workType, time, location, salary,id } = job || {};
+  console.log(job)
   return (
     <div className=" border-2 rounded-xl p-4">
       <div className="card w-full card-side bg-base-100">
@@ -35,7 +36,7 @@ const AppliedCard = ({ jobs }) => {
             </div>
           </div>
           <div className="card-actions absolute  right-0">
-            <Link to="/"  className="btn btn-type">View Details</Link>
+            <Link to={`../job/${id}`}  className="btn btn-type">View Details</Link>
           </div>
         </div>
       </div>

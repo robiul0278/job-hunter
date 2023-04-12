@@ -5,6 +5,7 @@ const cartJobLoader = async () => {
     const jobs = await loaderJobs.json();
 
     const storedCart = getShoppingCart();
+    console.log(storedCart);
 
     const savedCart = [];
     // console.log(savedCart);

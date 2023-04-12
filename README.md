@@ -9,3 +9,8 @@
     • It only displays up to 4 jobs by default, or up to 8 jobs if the "See All Jobs" button is clicked.
     • Each card displays the job title, company name, company, location, salary, and jobType (remote, onsite or fulltime).
     • Each card also has a "View Details" button that links to a job details page.
+
+
+
+
+Live site link : https://job-hunter-bd.netlify.app/

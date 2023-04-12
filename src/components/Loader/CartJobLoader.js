@@ -7,7 +7,7 @@ const cartJobLoader = async () => {
     const storedCart = getShoppingCart();
 
     const savedCart = [];
-    console.log(savedCart);
+    // console.log(savedCart);
 
     for(const id in storedCart){
         const addedJob = jobs.find(db => db.id == id);
@@ -17,7 +17,7 @@ const cartJobLoader = async () => {
             savedCart.push(addedJob);
         }
     }
-    console.log(storedCart);
+    // console.log(storedCart);
     return savedCart;
 }
 
